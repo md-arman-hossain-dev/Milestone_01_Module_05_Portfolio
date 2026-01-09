@@ -1,4 +1,9 @@
 /* shared css  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
@@ -19,16 +24,14 @@
     color: white;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 /* shared css  */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 header {
-    background-color: #FFF8F3;
+    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
+    background-repeat: no-repeat;
+    background-position: left top, bottom right;
     padding-top: 50px;
 }
 nav {
@@ -53,3 +56,44 @@ nav .menu li {
 nav .menu a {
     text-decoration: none;
 }
+
+
+/* banner css start */
+.banner {
+    border: 1px red solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 46px 38px 0 230px;
+}
+.banner .banner_content {
+    max-width: 585px;
+}
+.banner .banner_content h2{
+    font-size: 45px;
+    font-weight: 700;
+    color: #474747;
+}
+.banner_content h1 {
+    font-size: 85px;
+    font-weight: 800;
+    color: #000;
+    padding: 5px 0 20px 0;
+}
+.banner_content p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #757575;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+.banner_content button {
+    margin-right: 30px;
+}
+
+.banner_image img {
+    max-width: 584px;
+    vertical-align: middle;
+}
+
+/* banner css end */
